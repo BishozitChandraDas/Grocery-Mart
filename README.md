@@ -3,5 +3,6 @@
 A new Flutter project.
 
 ## Project Details 
- -Theme mode (Dark & Light)
+ - Lock device orientation
+ - Theme mode (Dark & Light)
 
