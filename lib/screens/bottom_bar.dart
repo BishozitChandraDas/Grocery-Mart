@@ -17,11 +17,11 @@ class BottomBarScreen extends StatefulWidget {
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
   int _selectedIndex = 0;
-  final List _pages = [
-    const HomeScreen(),
-    const CategoriesScreen(),
-    const CartScreen(),
-    const UserScreen()
+  final List<Map<String, dynamic>> _pages = [
+    {"page": const HomeScreen(), "title": "Home screen"},
+    {"page": const CategoriesScreen(), "title": "Categories screen"},
+    {"page": const CartScreen(), "title": "Cart screen"},
+    {"page": const UserScreen(), "title": "User screen"}
   ];
   void _selectedPage(int index) {
     setState(() {
@@ -34,7 +34,10 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
     final themeState = Provider.of<DarkThemeProvider>(context);
     bool _isDark = themeState.getDarkTheme;
     return Scaffold(
-      body: _pages[_selectedIndex],
+      // appBar: AppBar(
+      //   title: Text(_pages[_selectedIndex]['title']),
+      // ),
+      body: _pages[_selectedIndex]["page"],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: themeState.getDarkTheme
             ? Theme.of(context).cardColor
@@ -43,9 +46,8 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
-        unselectedItemColor: _isDark
-         ? Colors.white10 : Colors.black12,
-        selectedItemColor: _isDark ? Colors.lightBlue.shade200 : Colors.black87, 
+        unselectedItemColor: _isDark ? Colors.white10 : Colors.black12,
+        selectedItemColor: _isDark ? Colors.lightBlue.shade200 : Colors.black87,
         onTap: _selectedPage,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(

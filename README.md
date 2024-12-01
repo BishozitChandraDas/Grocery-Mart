@@ -6,4 +6,5 @@ A new Flutter project.
  - Lock device orientation
  - Theme mode (Dark & Light)
  - Implement the bottom bar
+ - Add different appbars for the different screen in the bottombar
 
