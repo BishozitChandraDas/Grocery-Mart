@@ -7,4 +7,5 @@ A new Flutter project.
  - Theme mode (Dark & Light)
  - Implement the bottom bar
  - Add different appbars for the different screen in the bottombar
+ - Implement the user screen
 
