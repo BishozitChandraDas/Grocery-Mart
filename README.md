@@ -8,4 +8,5 @@ A new Flutter project.
  - Implement the bottom bar
  - Add different appbars for the different screen in the bottombar
  - Implement the user screen
+ - Create the update address dialog
 
