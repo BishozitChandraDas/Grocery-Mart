@@ -10,4 +10,5 @@ A new Flutter project.
  - Implement the user screen
  - Create the update address dialog
  - Implement the logout dialog
+ - Implement the category design
 
