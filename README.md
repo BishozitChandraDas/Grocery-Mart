@@ -1,6 +1,5 @@
-# Grocery_Store
-
-A new Flutter project.
+# Grocery Store
+Super shop app
 
 ## Project Details 
  - Lock device orientation

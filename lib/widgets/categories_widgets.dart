@@ -4,7 +4,13 @@ import 'package:grocery_store/widgets/text_widget.dart';
 import 'package:provider/provider.dart';
 
 class CategoriesWidgets extends StatelessWidget {
-  const CategoriesWidgets({super.key});
+  const CategoriesWidgets(
+      {super.key,
+      required this.catText,
+      required this.imgPath,
+      required this.passedColor}); 
+  final String catText, imgPath;
+  final Color passedColor;
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +20,16 @@ class CategoriesWidgets extends StatelessWidget {
     double _screenWidth = MediaQuery.of(context).size.width;
 
     return InkWell(
-      onTap: (){
+      onTap: () {
         print('Category pressed');
       },
       child: Container(
         // height: _screenWidth * 0.6,
         decoration: BoxDecoration(
-          color: Colors.red.withOpacity(0.1),
+          color: passedColor.withOpacity(0.1),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: Colors.red.withOpacity(0.7),
+            color: passedColor.withOpacity(0.7),
             width: 2,
           ),
         ),
@@ -32,13 +38,13 @@ class CategoriesWidgets extends StatelessWidget {
             Container(
               height: _screenWidth * 0.3,
               width: _screenWidth * 0.3,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/images/categories/veg.png'),
+                      image: AssetImage(imgPath),
                       fit: BoxFit.fill)),
             ),
             TextWidget(
-              text: 'Category name',
+              text: catText,
               color: color,
               textSize: 20,
               isTitle: true,
