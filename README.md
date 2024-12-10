@@ -10,4 +10,6 @@ Super shop app
  - Create the update address dialog
  - Implement the logout dialog
  - Implement the category design
+ - Finish building the category screen
+ - Implement the card swiper in the home screen
 

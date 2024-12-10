@@ -11,12 +11,12 @@ import '../provider/dark_theme_provider.dart';
 class BottomBarScreen extends StatefulWidget {
   const BottomBarScreen({super.key});
 
-  @override
+  @override 
   State<BottomBarScreen> createState() => _BottomBarScreenState();
 }
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
   final List<Map<String, dynamic>> _pages = [
     {"page": const HomeScreen(), "title": "Home screen"},
     {"page": CategoriesScreen(), "title": "Categories screen"},
