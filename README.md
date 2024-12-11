@@ -14,4 +14,5 @@ Super shop app
  - Implement the card swiper in the home screen
  - Implement the sale widget
  - Create the items on sale listview
+ - Impelment the rotated on sale text widget
 

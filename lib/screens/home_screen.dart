@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_store/provider/dark_theme_provider.dart';
 import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/on_sale_widget.dart';
@@ -51,21 +52,66 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 6,
           ),
           TextButton(
-              onPressed: () {},
-              child: TextWidget(
-                text: 'View all',
-                color: Colors.blue,
-                textSize: 20,
-                maxLines: 1,
-              )),
+            onPressed: () {},
+            child: TextWidget(
+              text: 'View all',
+              color: Colors.blue,
+              textSize: 20,
+              maxLines: 1,
+            ),
+          ),
+          const SizedBox(
+            height: 6,
+          ),
+          // SizedBox(
+          //   height: size.height * 0.24,
+          //   child: ListView.builder(
+          //       itemCount: 10,
+          //       scrollDirection: Axis.horizontal,
+          //       itemBuilder: (ctx, index) {
+          //         return const OnSaleWidget();
+          //       }),
+          // ),
           SizedBox(
-            height: size.height * 0.24,
-            child: ListView.builder(
-                itemCount: 10,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (ctx, index) {
-                  return OnSaleWidget();
-                }),
+            child: Row(
+              children: [
+                RotatedBox(
+                  quarterTurns: -1,
+                  child: Row(
+                    children: [
+                      TextWidget(
+                        text: 'On sale'.toUpperCase(),
+                        color: Colors.red,
+                        textSize: 22,
+                        isTitle: true,
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      const Icon(
+                        IconlyLight.discount,
+                        color: Colors.red,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                Flexible(
+                  child: SizedBox(
+                    height: size.height * 0.24,
+                    child: ListView.builder(
+                      itemCount: 10,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (ctx, index) {
+                        return const OnSaleWidget();
+                      },
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
