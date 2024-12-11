@@ -13,4 +13,5 @@ Super shop app
  - Finish building the category screen
  - Implement the card swiper in the home screen
  - Implement the sale widget
+ - Create the items on sale listview
 

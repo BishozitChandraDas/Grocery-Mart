@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_store/provider/dark_theme_provider.dart';
 import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/on_sale_widget.dart';
+import 'package:grocery_store/widgets/text_widget.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -46,8 +47,26 @@ class _HomeScreenState extends State<HomeScreen> {
               // control: SwiperControl(color: Colors.black), // Slider sign
             ),
           ),
-
-          OnSaleWidget(),
+          const SizedBox(
+            height: 6,
+          ),
+          TextButton(
+              onPressed: () {},
+              child: TextWidget(
+                text: 'View all',
+                color: Colors.blue,
+                textSize: 20,
+                maxLines: 1,
+              )),
+          SizedBox(
+            height: size.height * 0.24,
+            child: ListView.builder(
+                itemCount: 10,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (ctx, index) {
+                  return OnSaleWidget();
+                }),
+          ),
         ],
       ),
     );
