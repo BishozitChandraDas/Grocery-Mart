@@ -2,6 +2,7 @@ import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_store/services/utils.dart';
+import 'package:grocery_store/widgets/heart_btn.dart';
 import 'package:grocery_store/widgets/price_widget.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
 
@@ -72,6 +73,7 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                                 color: color,
                               ),
                             ),
+                            // HeartBtn(),
                           ],
                         ),
                       ],

@@ -8,7 +8,7 @@ class CategoriesWidgets extends StatelessWidget {
       {super.key,
       required this.catText,
       required this.imgPath,
-      required this.passedColor}); 
+      required this.passedColor});
   final String catText, imgPath;
   final Color passedColor;
 
@@ -40,8 +40,7 @@ class CategoriesWidgets extends StatelessWidget {
               width: _screenWidth * 0.3,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage(imgPath),
-                      fit: BoxFit.fill)),
+                      image: AssetImage(imgPath), fit: BoxFit.fill)),
             ),
             TextWidget(
               text: catText,
