@@ -15,4 +15,5 @@ Super shop app
  - Implement the sale widget
  - Create the items on sale listview
  - Impelment the rotated on sale text widget
+ - Fancy image implementation
 
