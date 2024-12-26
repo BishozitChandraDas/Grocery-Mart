@@ -1,6 +1,8 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:grocery_store/widgets/heart_btn.dart';
+import 'package:grocery_store/widgets/price_widget.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
 
 import '../services/utils.dart';
@@ -13,6 +15,19 @@ class FeedItemsWidget extends StatefulWidget {
 }
 
 class _FeedItemsWidgetState extends State<FeedItemsWidget> {
+  final _quantityTextController = TextEditingController();
+  @override
+  void initState() {
+    _quantityTextController.text = '1';
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _quantityTextController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
@@ -34,8 +49,12 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                 boxFit: BoxFit.fill,
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  // vertical: 5,
+                ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     TextWidget(
                       text: 'Title',
@@ -46,7 +65,72 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                     const HeartBtn(),
                   ],
                 ),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const PriceWidget(),
+                    const SizedBox(
+                      width: 8,
+                    ),
+                    Flexible(
+                        child: Row(
+                      children: [
+                        FittedBox(
+                          child: TextWidget(
+                            text: 'KG',
+                            color: color,
+                            textSize: 18,
+                            isTitle: true,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Flexible(
+                            child: TextFormField(
+                          controller: _quantityTextController,
+                          key: const ValueKey('10'),
+                          style: TextStyle(color: color, fontSize: 18),
+                          keyboardType: TextInputType.number,
+                          maxLines: 1,
+                          enabled: true,
+                          inputFormatters: [
+                            FilteringTextInputFormatter.allow(
+                              RegExp('[0-9]'),
+                            ),
+                          ],
+                        ))
+                      ],
+                    ))
+                  ],
+                ),
+              ),
+              const Spacer(),
+              SizedBox(
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {},
+                  child: TextWidget(
+                    text: 'Add to cart',
+                    maxLines: 1,
+                    color: color,
+                    textSize: 20,
+                  ),
+                  style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all(Theme.of(context).cardColor),
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          const RoundedRectangleBorder(
+                              borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(12),
+                        bottomRight: Radius.circular(12),
+                      )))),
+                ),
+              ),
             ],
           ),
         ),

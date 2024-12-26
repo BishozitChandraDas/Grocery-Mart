@@ -16,4 +16,5 @@ Super shop app
  - Create the items on sale listview
  - Impelment the rotated on sale text widget
  - Fancy image implementation
+ - Implement the feeds widget and add it to the Home screen
 
