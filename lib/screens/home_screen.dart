@@ -3,7 +3,9 @@ import 'dart:math';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_store/inner_screens/on_sale_screen.dart';
 import 'package:grocery_store/provider/dark_theme_provider.dart';
+import 'package:grocery_store/services/global_methods.dart';
 import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/feed_items_widget.dart';
 import 'package:grocery_store/widgets/on_sale_widget.dart';
@@ -26,11 +28,25 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   @override
+/*************  ✨ Codeium Command ⭐  *************/
+  /// The main screen of the app, containing a slider of offers, a list of items on sale,
+  /// and a grid of products.
+  ///
+  /// The slider is a [Swiper] widget, which is a third-party package. The items on sale
+  /// are displayed in a [ListView], and the products are displayed in a [GridView].
+  ///
+  /// The screen also contains two buttons: "View all" and "Browse all". The "View all"
+  /// button navigates to the [OnSaleScreen], and the "Browse all" button does nothing.
+  ///
+  /// The screen also contains a title and a subtitle. The title is "Home" and the subtitle
+  /// is "Our products".
+/******  3cf32a55-d257-4c72-97f8-17c75fe036f2  *******/
   Widget build(BuildContext context) {
     final Utils utils = Utils(context);
     final Color color = Utils(context).color;
     final themeState = utils.getTheme;
     Size size = utils.getScreenSize;
+   
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -57,7 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 6,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                GlobalMethods.navigateTo(
+                    ctx: context, routeName: OnSaleScreen.routeName);
+              },
               child: TextWidget(
                 text: 'View all',
                 color: Colors.blue,

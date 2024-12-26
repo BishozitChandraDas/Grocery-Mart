@@ -18,4 +18,5 @@ Super shop app
  - Fancy image implementation
  - Implement the feeds widget and add it to the Home screen
  - Make the price widget dynamic
+ - Implement the sale screen 
 
