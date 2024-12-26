@@ -71,7 +71,15 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const PriceWidget(),
+                    Flexible(
+                      flex: 2,
+                      child: PriceWidget(
+                        salePrice: 2.99,
+                        price: 5.9,
+                        textPrice: _quantityTextController.text,
+                        isOnSale: true,
+                      ),
+                    ),
                     const SizedBox(
                       width: 8,
                     ),
@@ -90,19 +98,23 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                           width: 5,
                         ),
                         Flexible(
+                            flex: 2,
                             child: TextFormField(
-                          controller: _quantityTextController,
-                          key: const ValueKey('10'),
-                          style: TextStyle(color: color, fontSize: 18),
-                          keyboardType: TextInputType.number,
-                          maxLines: 1,
-                          enabled: true,
-                          inputFormatters: [
-                            FilteringTextInputFormatter.allow(
-                              RegExp('[0-9]'),
-                            ),
-                          ],
-                        ))
+                              controller: _quantityTextController,
+                              key: const ValueKey('10'),
+                              style: TextStyle(color: color, fontSize: 18),
+                              keyboardType: TextInputType.number,
+                              maxLines: 1,
+                              enabled: true,
+                              onChanged: (valueee) {
+                                setState(() {});
+                              },
+                              inputFormatters: [
+                                FilteringTextInputFormatter.allow(
+                                  RegExp('[0-9]'),
+                                ),
+                              ],
+                            ))
                       ],
                     ))
                   ],
@@ -120,8 +132,8 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                     textSize: 20,
                   ),
                   style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Theme.of(context).cardColor),
+                      backgroundColor: MaterialStateProperty.all(
+                          Theme.of(context).cardColor),
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           const RoundedRectangleBorder(
