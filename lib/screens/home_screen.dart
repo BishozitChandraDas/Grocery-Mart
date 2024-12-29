@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_store/inner_screens/feeds_screen.dart';
 import 'package:grocery_store/inner_screens/on_sale_screen.dart';
 import 'package:grocery_store/provider/dark_theme_provider.dart';
 import 'package:grocery_store/services/global_methods.dart';
@@ -140,7 +141,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   // const Spacer(),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                        GlobalMethods.navigateTo(
+                    ctx: context, routeName: FeedsScreen.routeName);
+                    },
                     child: TextWidget(
                       text: 'Browse all',
                       maxLines: 1,

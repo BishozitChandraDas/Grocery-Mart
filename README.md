@@ -20,4 +20,5 @@ Super shop app
  - Make the price widget dynamic
  - Implement the sale screen 
  - Handle UI if there is no products on sale
+ - Implement the feeds screen
 

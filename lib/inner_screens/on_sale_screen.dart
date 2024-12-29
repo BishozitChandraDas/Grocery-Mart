@@ -10,9 +10,8 @@ class OnSaleScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool _isEmpty = true;
+    bool _isEmpty = false;
     final Color color = Utils(context).color;
-    final themeState = Utils(context).getTheme;
     Size size = Utils(context).getScreenSize;
     return Scaffold(
       appBar: AppBar(
@@ -28,6 +27,7 @@ class OnSaleScreen extends StatelessWidget {
         ),
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        centerTitle: true,
         title: TextWidget(
           text: 'Products on sale',
           color: color,
@@ -43,7 +43,9 @@ class OnSaleScreen extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(25.0),
-                      child: Image.asset('assets/images/offers/empty_box.png',),
+                      child: Image.asset(
+                        'assets/images/offers/empty_box.png',
+                      ),
                     ),
                     Text(
                       'No products on sale yet!,\nStay tuned',
