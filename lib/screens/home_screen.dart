@@ -28,19 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   @override
-/*************  ✨ Codeium Command ⭐  *************/
-  /// The main screen of the app, containing a slider of offers, a list of items on sale,
-  /// and a grid of products.
-  ///
-  /// The slider is a [Swiper] widget, which is a third-party package. The items on sale
-  /// are displayed in a [ListView], and the products are displayed in a [GridView].
-  ///
-  /// The screen also contains two buttons: "View all" and "Browse all". The "View all"
-  /// button navigates to the [OnSaleScreen], and the "Browse all" button does nothing.
-  ///
-  /// The screen also contains a title and a subtitle. The title is "Home" and the subtitle
-  /// is "Our products".
-/******  3cf32a55-d257-4c72-97f8-17c75fe036f2  *******/
   Widget build(BuildContext context) {
     final Utils utils = Utils(context);
     final Color color = Utils(context).color;
@@ -130,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (ctx, index) {
                           return const OnSaleWidget();
-                        },
+                        },  
                       ),
                     ),
                   ),
