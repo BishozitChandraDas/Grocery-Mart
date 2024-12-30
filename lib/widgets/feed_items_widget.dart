@@ -42,11 +42,14 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
           borderRadius: BorderRadius.circular(12),
           child: Column(
             children: [
-              FancyShimmerImage(
-                imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
-                width: size.width * 0.21,
-                height: size.width * 0.2,
-                boxFit: BoxFit.fill,
+              ClipRRect(
+                // borderRadius: BorderRadius.circular(12),
+                child: Image.asset(
+                  'assets/images/apple_poster.png',
+                  width: size.width * 0.22,
+                  height: size.width * 0.2,
+                  fit: BoxFit.fill,
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(

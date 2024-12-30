@@ -36,11 +36,13 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    FancyShimmerImage(
-                      imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
-                      width: size.width * 0.22,
-                      height: size.width * 0.22,
-                      boxFit: BoxFit.fill,
+                    ClipRRect(
+                      child: Image.asset(
+                        'assets/images/apple_poster.png',
+                        width: size.width * 0.22,
+                        height: size.width * 0.22,
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     Column(
                       children: [
