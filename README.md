@@ -22,4 +22,5 @@ Super shop app
  - Handle UI if there is no products on sale
  - Implement the feeds screen
  - Implement the cart widget
+ - Implement the cart screen
 
