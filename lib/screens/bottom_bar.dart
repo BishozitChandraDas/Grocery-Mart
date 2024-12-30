@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_store/screens/cart.dart';
-import 'package:grocery_store/screens/categories.dart';
+import 'package:grocery_store/screens/cart/cart_screen.dart';
+import 'package:grocery_store/screens/categories_screen.dart';
 import 'package:grocery_store/screens/home_screen.dart';
-import 'package:grocery_store/screens/user.dart';
+import 'package:grocery_store/screens/user_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/dark_theme_provider.dart';
@@ -11,18 +11,19 @@ import '../provider/dark_theme_provider.dart';
 class BottomBarScreen extends StatefulWidget {
   const BottomBarScreen({super.key});
 
-  @override 
+  @override
   State<BottomBarScreen> createState() => _BottomBarScreenState();
 }
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
   final List<Map<String, dynamic>> _pages = [
     {"page": const HomeScreen(), "title": "Home screen"},
     {"page": CategoriesScreen(), "title": "Categories screen"},
     {"page": const CartScreen(), "title": "Cart screen"},
     {"page": const UserScreen(), "title": "User screen"}
   ];
+
   void _selectedPage(int index) {
     setState(() {
       _selectedIndex = index;
