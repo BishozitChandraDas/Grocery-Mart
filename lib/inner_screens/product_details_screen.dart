@@ -172,6 +172,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                         key: const ValueKey('quantity'),
                         keyboardType: TextInputType.number,
                         maxLines: 1,
+                        style: TextStyle(color: color),
                         decoration: const InputDecoration(
                           border: UnderlineInputBorder(),
                         ),

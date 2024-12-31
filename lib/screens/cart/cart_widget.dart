@@ -100,6 +100,7 @@ class _CartWidgetState extends State<CartWidget> {
                                   controller: _quantityTextController,
                                   keyboardType: TextInputType.number,
                                   maxLines: 1,
+                                  style: TextStyle(color: color),
                                   decoration: const InputDecoration(
                                     focusedBorder: UnderlineInputBorder(
                                       borderSide: BorderSide(),
