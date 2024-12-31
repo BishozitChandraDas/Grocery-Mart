@@ -24,4 +24,5 @@ Super shop app
  - Implement the cart widget
  - Implement the cart screen
  - Implement the products details screen
+ - Implement the quantity text controller function
 
