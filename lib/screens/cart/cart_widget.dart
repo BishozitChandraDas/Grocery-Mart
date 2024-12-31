@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:grocery_store/inner_screens/product_details_screen.dart';
+import 'package:grocery_store/services/global_methods.dart';
 import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/heart_btn.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
@@ -29,7 +31,10 @@ class _CartWidgetState extends State<CartWidget> {
     Size size = Utils(context).getScreenSize;
     final Color color = Utils(context).color;
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        GlobalMethods.navigateTo(
+                ctx: context, routeName: ProductDetailsScreen.routeName);
+      },
       child: Row(
         children: [
           Expanded(

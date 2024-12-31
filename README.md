@@ -23,4 +23,5 @@ Super shop app
  - Implement the feeds screen
  - Implement the cart widget
  - Implement the cart screen
+ - Implement the products details screen
 
