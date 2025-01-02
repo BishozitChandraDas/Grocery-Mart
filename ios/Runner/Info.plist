@@ -4,7 +4,7 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>Grocery Store</key>
+	<key>CFBundleDisplayName</key>
 	<string>Grocery Store</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
