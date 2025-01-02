@@ -6,6 +6,7 @@ import 'package:grocery_store/inner_screens/on_sale_screen.dart';
 import 'package:grocery_store/inner_screens/product_details_screen.dart';
 import 'package:grocery_store/provider/dark_theme_provider.dart';
 import 'package:grocery_store/screens/bottom_bar.dart';
+import 'package:grocery_store/screens/wishlist/wishlist_screen.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
@@ -56,6 +57,7 @@ class _MyAppState extends State<MyApp> {
               OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),
               ProductDetailsScreen.routeName: (ctx) => const ProductDetailsScreen(),
+              WishlistScreen.routeName: (ctx) => const WishlistScreen(),
             });
       }),
     );

@@ -16,7 +16,7 @@ class CartScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: TextWidget(
-          text: 'Cart (2)',
+          text: 'Cart',
           color: color,
           isTitle: true,
           textSize: 22,
@@ -38,7 +38,7 @@ class CartScreen extends StatelessWidget {
             child: ListView.builder(
                 itemCount: 10,
                 itemBuilder: (ctx, index) {
-                  return CartWidget();
+                  return CartWidget(); 
                 }),
           ),
         ],
