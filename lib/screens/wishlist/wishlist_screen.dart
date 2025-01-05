@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:grocery_store/screens/wishlist/wishlist_widget.dart';
 import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/back_widget.dart';
@@ -14,28 +15,35 @@ class WishlistScreen extends StatelessWidget {
     Size size = Utils(context).getScreenSize;
     final Color color = Utils(context).color;
     return Scaffold(
-      appBar: AppBar(
-        leading: const BackWidget(),
-        automaticallyImplyLeading: false,
-        elevation: 0,
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        title: TextWidget(
-          text: 'Wishlist',
-          color: color,
-          isTitle: true,
-          textSize: 22,
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              IconlyBroken.delete,
-              color: color,
-            ),
+        appBar: AppBar(
+          centerTitle: true,
+          leading: const BackWidget(),
+          automaticallyImplyLeading: false,
+          elevation: 0,
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          title: TextWidget(
+            text: 'Wishlist',
+            color: color,
+            isTitle: true,
+            textSize: 22,
           ),
-        ],
-      ),
-      body: WishlistWidget(),
-    );
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                IconlyBroken.delete,
+                color: color,
+              ),
+            ),
+          ],
+        ),
+        body: MasonryGridView.count(
+          crossAxisCount: 2,
+          // mainAxisSpacing: 4,
+          // crossAxisSpacing: 4,
+          itemBuilder: (context, index) {
+            return const WishlistWidget();
+          },
+        ));
   }
 }
