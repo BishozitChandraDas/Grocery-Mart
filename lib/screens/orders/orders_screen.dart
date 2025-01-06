@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_store/widgets/back_widget.dart';
 import 'package:provider/provider.dart';
-
 import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
 import 'orders_widget.dart';
@@ -20,15 +19,15 @@ class _OrdersScreenState extends State<OrdersScreen> {
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
-    // Size size = Utils(context).getScreenSize;
+    Size size = Utils(context).getScreenSize;
     return Scaffold(
         appBar: AppBar(
           leading: const BackWidget(),
-          elevation: 0,
+          elevation: 0,        
           centerTitle: true,
           title: TextWidget(
-            text: 'Your orders',
-            color: color,
+            text: 'Your orders',  
+            color: color,  
             textSize: 24.0,
             isTitle: true,
           ),
