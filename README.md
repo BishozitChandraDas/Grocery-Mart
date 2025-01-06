@@ -28,4 +28,5 @@ Super shop app
  - Implement the wishlist screen
  - Impelement the warning dialog
  - Implement the orders screen
+ - Implement the viewed recently products screen
 

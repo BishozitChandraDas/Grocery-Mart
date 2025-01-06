@@ -22,10 +22,10 @@ class WishlistScreen extends StatelessWidget {
           automaticallyImplyLeading: false,
           elevation: 0,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-          title: TextWidget(   
-            text: 'Wishlist',  
-            color: color,    
-            isTitle: true,  
+          title: TextWidget(
+            text: 'Wishlist',
+            color: color,
+            isTitle: true,
             textSize: 22,
           ),
           actions: [
