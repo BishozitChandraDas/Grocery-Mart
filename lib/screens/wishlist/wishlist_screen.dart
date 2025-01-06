@@ -24,8 +24,8 @@ class WishlistScreen extends StatelessWidget {
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           title: TextWidget(   
             text: 'Wishlist',  
-            color: color,
-            isTitle: true,
+            color: color,    
+            isTitle: true,  
             textSize: 22,
           ),
           actions: [
