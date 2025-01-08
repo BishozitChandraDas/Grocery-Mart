@@ -31,8 +31,8 @@ class WishlistWidget extends StatelessWidget {
             children: [
               Container(
                 margin: EdgeInsets.only(left: 8),
-                width: size.width * 0.2,
-                height: size.height * 0.15,
+                width: size.width * 0.22,
+                height: size.height * 0.12,
                 child: ClipRRect(
                   // borderRadius: BorderRadius.circular(12),
                   child: Image.asset(

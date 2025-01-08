@@ -32,7 +32,7 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
               // borderRadius: BorderRadius.circular(12),
               child: Image.asset(
                 'assets/images/apple_poster.png',
-                width: size.width * 0.17,
+                width: size.width * 0.22,
                 height: size.height * 0.12,
                 fit: BoxFit.fill,
               ),

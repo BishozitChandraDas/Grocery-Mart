@@ -29,4 +29,5 @@ Super shop app
  - Impelement the warning dialog
  - Implement the orders screen
  - Implement the viewed recently products screen
+ - Handle the empty screen for the Orders, Cart, Wishlist and Viewed recently
 
