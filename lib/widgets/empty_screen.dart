@@ -6,8 +6,14 @@ import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
 
 class EmptyScreen extends StatelessWidget {
-  const EmptyScreen({super.key});
-
+  const EmptyScreen(
+      {super.key,
+      required this.imagePath,
+      required this.title,
+      required this.subtitle,
+      required this.buttontext});
+  final String imagePath, title, subtitle, buttontext;
+ 
   @override
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
@@ -25,7 +31,7 @@ class EmptyScreen extends StatelessWidget {
               height: 50,
             ),
             Image.asset(
-              'assets/images/cart.png',
+              imagePath,
               width: double.infinity,
               height: size.height * 0.4,
             ),
@@ -44,11 +50,18 @@ class EmptyScreen extends StatelessWidget {
               height: 20,
             ),
             TextWidget(
-                text: 'No items in your cart yet',
+                text: title,
+                color: Colors.cyan,
+                textSize: 20),
+            const SizedBox(
+              height: 20,
+            ),
+            TextWidget(
+                text: subtitle,
                 color: Colors.cyan,
                 textSize: 20),
             SizedBox(
-              height: size.height * 0.1,
+              height: size.height * 0.08,
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -71,7 +84,7 @@ class EmptyScreen extends StatelessWidget {
                     ctx: context, routeName: FeedsScreen.routeName);
               },
               child: TextWidget(
-                text: 'Browse Products',
+                text: buttontext,
                 textSize: 20,
                 color: themeState ? Colors.grey.shade300 : Colors.grey.shade800,
                 isTitle: true,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_store/widgets/back_widget.dart';
+import 'package:grocery_store/widgets/empty_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../../services/utils.dart';
@@ -21,7 +22,13 @@ class _OrdersScreenState extends State<OrdersScreen> {
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
     // Size size = Utils(context).getScreenSize;
-    return Scaffold(
+    bool _isEmpty = true;
+    return _isEmpty == true ? const EmptyScreen(
+      title: 'You did not place any order',
+      subtitle: 'Order something and make me happy :)',
+      buttontext: 'Shop now',
+      imagePath: 'assets/images/cart.png',
+    ) : Scaffold(
         appBar: AppBar(
           leading: const BackWidget(),
           elevation: 0,
