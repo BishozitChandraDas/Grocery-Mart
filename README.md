@@ -30,4 +30,5 @@ Super shop app
  - Implement the orders screen
  - Implement the viewed recently products screen
  - Handle the empty screen for the Orders, Cart, Wishlist and Viewed recently
+ - Implement the badge widget for the cart
 
