@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_store/consts/contss.dart';
+import 'package:grocery_store/screens/auth/register_screen.dart';
+import 'package:grocery_store/services/global_methods.dart';
 import 'package:grocery_store/widgets/auth_button.dart';
 import 'package:grocery_store/widgets/google_button.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
@@ -253,7 +255,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600),
                               recognizer: TapGestureRecognizer()
-                                ..onTap = () {}),
+                                ..onTap = () {
+                                  GlobalMethods.navigateTo(
+                                      ctx: context, routeName: RegisterScreen.routeName);
+                                }),
                         ]),
                   ),
                 ],
