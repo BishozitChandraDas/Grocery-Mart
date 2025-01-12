@@ -5,6 +5,7 @@ import 'package:grocery_store/inner_screens/feeds_screen.dart';
 import 'package:grocery_store/inner_screens/on_sale_screen.dart';
 import 'package:grocery_store/inner_screens/product_details_screen.dart';
 import 'package:grocery_store/provider/dark_theme_provider.dart';
+import 'package:grocery_store/screens/auth/login_screen.dart';
 import 'package:grocery_store/screens/bottom_bar.dart';
 import 'package:grocery_store/screens/orders/orders_screen.dart';
 import 'package:grocery_store/screens/viewed/viewed_recently_screen.dart';
@@ -54,7 +55,7 @@ class _MyAppState extends State<MyApp> {
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
-            home: const BottomBarScreen(),
+            home: const LoginScreen(),
             routes: {
               OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),
