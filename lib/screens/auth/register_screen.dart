@@ -1,8 +1,10 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_store/consts/contss.dart';
+import 'package:grocery_store/screens/auth/login_screen.dart';
 import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/auth_button.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
@@ -230,6 +232,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         const SizedBox(
                           height: 20,
                         ),
+
                         //Address
                         TextFormField(
                           focusNode: _addressFocusNode,
@@ -287,82 +290,30 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   AuthButton(
                     buttonText: 'Sign up',
-                    fct: (){
-                    _submitFormOnRegister();
-                  }, 
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  AuthButton(
-                    fct: () {},
-                    buttonText: 'Login',
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const GoogleButton(),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const Row(
-                    children: [
-                      Expanded(
-                        child: Divider(
-                          color: Colors.white,
-                          thickness: 2,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      TextWidget(
-                        text: 'OR',
-                        color: Colors.white,
-                        textSize: 18,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Expanded(
-                        child: Divider(
-                          color: Colors.white,
-                          thickness: 2,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  AuthButton(
-                    fct: () {},
-                    buttonText: 'Continue as a Guest',
-                    primary: Colors.black,
+                    fct: () {
+                      _submitFormOnRegister();
+                    },
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   RichText(
                     text: TextSpan(
-                        text: 'Don\'t have an account? ',
+                        text: 'Already a user? ',
                         style:
                             const TextStyle(color: Colors.white, fontSize: 18),
-                        children: [
+                        children: <TextSpan>[
                           TextSpan(
-                              text: ' Sign Up',
+                              text: ' Sign in',
                               style: const TextStyle(
-                                  color: Colors.lightBlue,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600),
+                                color: Colors.lightBlue,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                              ),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  GlobalMethods.navigateTo(
-                                      ctx: context,
-                                      routeName: RegisterScreen.routeName);
+                                  Navigator.pushReplacementNamed(
+                                      context, LoginScreen.routeName);
                                 }),
                         ]),
                   ),
