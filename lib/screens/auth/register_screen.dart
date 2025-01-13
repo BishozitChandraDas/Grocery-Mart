@@ -4,7 +4,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_store/consts/contss.dart';
+import 'package:grocery_store/screens/auth/forget_password_screen.dart';
 import 'package:grocery_store/screens/auth/login_screen.dart';
+import 'package:grocery_store/services/global_methods.dart';
 import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/auth_button.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
@@ -276,7 +278,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          GlobalMethods.navigateTo(
+                    ctx: context, routeName: ForgetPasswordScreen.routeName);
+                        },
                         child: const Text(
                           'Forgot Password?',
                           maxLines: 1,

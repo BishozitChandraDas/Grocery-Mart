@@ -5,6 +5,7 @@ import 'package:grocery_store/inner_screens/feeds_screen.dart';
 import 'package:grocery_store/inner_screens/on_sale_screen.dart';
 import 'package:grocery_store/inner_screens/product_details_screen.dart';
 import 'package:grocery_store/provider/dark_theme_provider.dart';
+import 'package:grocery_store/screens/auth/forget_password_screen.dart';
 import 'package:grocery_store/screens/auth/login_screen.dart';
 import 'package:grocery_store/screens/auth/register_screen.dart';
 import 'package:grocery_store/screens/bottom_bar.dart';
@@ -66,6 +67,7 @@ class _MyAppState extends State<MyApp> {
               ViewedRecentlyScreen.routeName: (ctx) => const ViewedRecentlyScreen(),
               LoginScreen.routeName: (ctx) => const LoginScreen(),
               RegisterScreen.routeName: (ctx) => const RegisterScreen(),
+              ForgetPasswordScreen.routeName: (ctx) => const ForgetPasswordScreen(),
             });
       }),
     );

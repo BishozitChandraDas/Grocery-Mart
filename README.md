@@ -33,4 +33,5 @@ Super shop app
  - Implement the badge widget for the cart
  - Implement the login screen
  - Implement the sign up screen
+ - Implement the forget password screen
 

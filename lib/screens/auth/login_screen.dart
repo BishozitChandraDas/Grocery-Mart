@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_store/consts/contss.dart';
+import 'package:grocery_store/screens/auth/forget_password_screen.dart';
 import 'package:grocery_store/screens/auth/register_screen.dart';
 import 'package:grocery_store/services/global_methods.dart';
 import 'package:grocery_store/widgets/auth_button.dart';
@@ -176,7 +177,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   Align(
                     alignment: Alignment.topRight,
                     child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          GlobalMethods.navigateTo(
+                    ctx: context, routeName: ForgetPasswordScreen.routeName);
+                        },
                         child: const Text(
                           'Forgot Password?',
                           maxLines: 1,
@@ -192,7 +196,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 10,
                   ),
                   AuthButton(
-                    fct: () {},
+                    fct: _submitFormOnLogin,
                     buttonText: 'Login',
                   ),
                   const SizedBox(
