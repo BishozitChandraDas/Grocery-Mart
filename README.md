@@ -1,7 +1,7 @@
 # Grocery Store
 Super shop app
  
-## Project Details  
+## Project Details     
  - Lock device orientation
  - Theme mode (Dark & Light)
  - Implement the bottom bar
