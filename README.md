@@ -1,6 +1,6 @@
 # Grocery Store
 Super shop app
-
+ 
 ## Project Details  
  - Lock device orientation
  - Theme mode (Dark & Light)
