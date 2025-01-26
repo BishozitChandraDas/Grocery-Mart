@@ -26,7 +26,7 @@ class PriceWidget extends StatelessWidget {
             color: Colors.green,
             textSize: 22,
           ),
-          const SizedBox(
+          const SizedBox( 
             width: 5,
           ),
           Visibility(

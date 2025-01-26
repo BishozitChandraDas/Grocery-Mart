@@ -21,7 +21,7 @@ class GoogleButton extends StatelessWidget {
                 width: 40,
               ),
             ),
-            const SizedBox(
+            const SizedBox( 
               width: 8,
             ),
             const TextWidget(

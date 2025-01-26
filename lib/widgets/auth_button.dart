@@ -19,7 +19,7 @@ class AuthButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: primary, // background (button) color 
         ),
-        onPressed: () {
+        onPressed: () { 
           fct();
         },
         child: TextWidget(

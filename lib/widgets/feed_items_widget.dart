@@ -60,7 +60,7 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                   horizontal: 10,
                   // vertical: 5,
                 ),
-                child: Row(
+                child: Row( 
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     TextWidget(

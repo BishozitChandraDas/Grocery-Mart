@@ -21,7 +21,7 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
     Size size = Utils(context).getScreenSize;
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Material(
+      child: Material( 
         color: Theme.of(context).cardColor.withOpacity(0.9),
         borderRadius: BorderRadius.circular(12),
         child: InkWell(

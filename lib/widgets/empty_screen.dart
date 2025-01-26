@@ -57,7 +57,7 @@ class EmptyScreen extends StatelessWidget {
               height: 20,
             ),
             TextWidget(
-                text: subtitle,
+                text: subtitle, 
                 color: Colors.cyan,
                 textSize: 20),
             SizedBox(

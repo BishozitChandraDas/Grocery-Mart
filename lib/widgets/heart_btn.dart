@@ -14,7 +14,7 @@ class HeartBtn extends StatelessWidget {
         print('Print heart button is pressed');
       },
       child: Icon(
-        IconlyLight.heart,
+        IconlyLight.heart, 
         size: 22,
         color: color,
       ),
