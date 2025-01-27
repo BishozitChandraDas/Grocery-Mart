@@ -25,7 +25,7 @@ class WishlistScreen extends StatelessWidget {
             buttontext: 'Add a wish',
             imagePath: 'assets/images/wishlist.png',
           )
-        : Scaffold(
+        : Scaffold( 
             appBar: AppBar(
               centerTitle: true,
               leading: const BackWidget(),

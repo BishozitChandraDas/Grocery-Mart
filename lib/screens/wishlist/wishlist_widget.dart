@@ -52,7 +52,7 @@ class WishlistWidget extends StatelessWidget {
                             IconlyLight.bag2,
                             color: color,
                           ),
-                        ),
+                        ), 
                         HeartBtn()
                       ],
                     ),

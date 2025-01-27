@@ -9,7 +9,7 @@ class GlobalMethods {
   static Future<void> warningDialog({
     required String title,
     required String subtitle,
-    required Function fct, 
+    required Function fct,  
     required BuildContext context,
   }) async {
     await showDialog(
