@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_store/consts/contss.dart';
 import 'package:grocery_store/screens/auth/forget_password_screen.dart';
 import 'package:grocery_store/screens/auth/register_screen.dart';
+import 'package:grocery_store/screens/bottom_bar.dart';
 import 'package:grocery_store/services/global_methods.dart';
 import 'package:grocery_store/widgets/auth_button.dart';
 import 'package:grocery_store/widgets/google_button.dart';
@@ -179,7 +180,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: TextButton(
                         onPressed: () {
                           GlobalMethods.navigateTo(
-                    ctx: context, routeName: ForgetPasswordScreen.routeName);
+                              ctx: context,
+                              routeName: ForgetPasswordScreen.routeName);
                         },
                         child: const Text(
                           'Forgot Password?',
@@ -239,8 +241,20 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(
                     height: 10,
                   ),
+                  // AuthButton(
+                  //   fct: () {},
+                  //   buttonText: 'Continue as a Guest',
+                  //   primary: Colors.black,
+                  // ),
                   AuthButton(
-                    fct: () {},
+                    fct: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BottomBarScreen(),
+                        ),
+                      );
+                    },
                     buttonText: 'Continue as a Guest',
                     primary: Colors.black,
                   ),
@@ -262,7 +276,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   GlobalMethods.navigateTo(
-                                      ctx: context, routeName: RegisterScreen.routeName);
+                                      ctx: context,
+                                      routeName: RegisterScreen.routeName);
                                 }),
                         ]),
                   ),
