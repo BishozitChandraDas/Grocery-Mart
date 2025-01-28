@@ -88,7 +88,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     borderRadius: BorderRadius.circular(12),
                     onTap: () => Navigator.canPop(context)
                         ? Navigator.pop(context)
-                        : null,  
+                        : null,
                     child: Icon(
                       IconlyLight.arrowLeft2,
                       color: theme == true ? Colors.white : Colors.black,
