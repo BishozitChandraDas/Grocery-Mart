@@ -70,7 +70,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               ),
               const TextWidget(
                 text: 'Forget password',
-                color: Colors.white,
+                color: Colors.white, 
                 textSize: 30,
               ),
               const SizedBox(
@@ -79,8 +79,8 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               TextFormField(
                 controller: _emailTextController,
                 style: const TextStyle(color: Colors.white),
-                decoration: const InputDecoration(
-                  hintText: 'Email address',
+                decoration: const InputDecoration( 
+                  hintText: 'Email address', 
                   hintStyle: TextStyle(color: Colors.white),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.white),
