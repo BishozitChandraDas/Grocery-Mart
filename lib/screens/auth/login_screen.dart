@@ -205,8 +205,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 10,
                   ),
                   const GoogleButton(),
-                  const SizedBox(
-                    height: 10,
+                  const SizedBox( 
+                    height: 10, 
                   ),
                   const Row(
                     children: [
