@@ -248,10 +248,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               return null;
                             }
                           },
-
                           // obscureText: _obscureText,
                           // keyboardType: TextInputType.visiblePassword,
-
+   
                           style: const TextStyle(color: Colors.white),
                           maxLines: 2,
                           textAlign: TextAlign.start,
