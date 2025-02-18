@@ -14,8 +14,8 @@ class WishlistScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = Utils(context).getScreenSize;
-    final Color color = Utils(context).color;
+    Size size = Utils(context).getScreenSize; 
+    final Color color = Utils(context).color; 
     bool _isEmpty = true;
 
     return _isEmpty
@@ -29,7 +29,7 @@ class WishlistScreen extends StatelessWidget {
             appBar: AppBar(
               centerTitle: true,
               leading: const BackWidget(),
-              automaticallyImplyLeading: false,
+              automaticallyImplyLeading: false, 
               elevation: 0,
               backgroundColor: Theme.of(context).scaffoldBackgroundColor,
               title: TextWidget(

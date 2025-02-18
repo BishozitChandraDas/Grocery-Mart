@@ -49,23 +49,23 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
                   isTitle: true,
                 ),
                 const SizedBox(
-                  height: 12,
+                  height: 12, 
                 ),
                 TextWidget(
-                  text: '\$12.88',
+                  text: '\$12.88', 
                   color: color,
                   textSize: 20,
-                  isTitle: false,
+                  isTitle: false, 
                 ),
               ],
             ),
             const Spacer(),
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 5),
-                child: Material(
+                child: Material( 
                   borderRadius: BorderRadius.circular(12),
-                  color: Colors.green,
-                  child: InkWell(
+                  color: Colors.green, 
+                  child: InkWell( 
                     borderRadius: BorderRadius.circular(12),
                     onTap: () {},
                     child: const Padding(

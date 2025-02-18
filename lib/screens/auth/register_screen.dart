@@ -11,7 +11,7 @@ import 'package:grocery_store/services/utils.dart';
 import 'package:grocery_store/widgets/auth_button.dart';
 import 'package:grocery_store/widgets/text_widget.dart';
 
-class RegisterScreen extends StatefulWidget {
+class RegisterScreen extends StatefulWidget { 
   static const routeName = '/RegisterScreen';
   const RegisterScreen({super.key});
 
