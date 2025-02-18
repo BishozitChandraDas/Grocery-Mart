@@ -43,9 +43,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
       body: _pages[_selectedIndex]["page"],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: themeState.getDarkTheme
-            ? Theme.of(context).cardColor
+            ? Theme.of(context).cardColor 
             : Colors.white,
-        type: BottomNavigationBarType.fixed,
+        type: BottomNavigationBarType.fixed, 
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
