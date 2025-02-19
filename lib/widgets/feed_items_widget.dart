@@ -50,9 +50,9 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                 // borderRadius: BorderRadius.circular(12),
                 child: Image.asset(
                   'assets/images/apple_poster.png',
-                  width: size.width * 0.22,
-                  height: size.width * 0.2,
-                  fit: BoxFit.fill,
+                  width: size.width * 0.22, 
+                  height: size.width * 0.2, 
+                  fit: BoxFit.fill, 
                 ),
               ),
               Padding(

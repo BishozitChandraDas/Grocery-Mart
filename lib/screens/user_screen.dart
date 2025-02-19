@@ -101,10 +101,10 @@ class _UserScreenState extends State<UserScreen> {
                 title: 'Wishlist',
                 icon: IconlyLight.heart,
                 onPressed: () {
-                  GlobalMethods.navigateTo(
+                  GlobalMethods.navigateTo( 
                       ctx: context, routeName: WishlistScreen.routeName);
                 },
-                color: color,
+                color: color, 
               ),
               _listTiles(
                 title: 'Viewed',

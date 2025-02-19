@@ -8,8 +8,8 @@ import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
 import 'orders_widget.dart';
 
-class OrdersScreen extends StatefulWidget {
-  static const routeName = '/OrderScreen';
+class OrdersScreen extends StatefulWidget { 
+  static const routeName = '/OrderScreen'; 
 
   const OrdersScreen({Key? key}) : super(key: key);
 

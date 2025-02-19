@@ -28,8 +28,8 @@ class WishlistScreen extends StatelessWidget {
         : Scaffold( 
             appBar: AppBar(
               centerTitle: true,
-              leading: const BackWidget(),
-              automaticallyImplyLeading: false, 
+              leading: const BackWidget(), 
+              automaticallyImplyLeading: false,  
               elevation: 0,
               backgroundColor: Theme.of(context).scaffoldBackgroundColor,
               title: TextWidget(
