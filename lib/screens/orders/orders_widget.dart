@@ -8,7 +8,7 @@ import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
 
 class OrderWidget extends StatefulWidget {
-  const OrderWidget({Key? key}) : super(key: key);
+  const OrderWidget({Key? key}) : super(key: key); 
 
   @override
   State<OrderWidget> createState() => _OrderWidgetState();
@@ -20,7 +20,7 @@ class _OrderWidgetState extends State<OrderWidget> {
     final Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
     return ListTile(
-      subtitle: const Text('Paid: \$12.8'),
+      subtitle: const Text('Paid: \$12.8'), 
       onTap: () {
         GlobalMethods.navigateTo(
             ctx: context, routeName: ProductDetailsScreen.routeName);

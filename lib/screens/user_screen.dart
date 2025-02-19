@@ -108,7 +108,7 @@ class _UserScreenState extends State<UserScreen> {
               ),
               _listTiles(
                 title: 'Viewed',
-                icon: IconlyLight.show,
+                icon: IconlyLight.show, 
                 onPressed: () {
                   GlobalMethods.navigateTo(
                       ctx: context, routeName: ViewedRecentlyScreen.routeName);
