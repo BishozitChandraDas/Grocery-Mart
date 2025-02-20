@@ -82,15 +82,16 @@ class _UserScreenState extends State<UserScreen> {
               _listTiles(
                 title: 'Profile',
                 subtitle: 'My Subtitle',
-                icon: IconlyLight.profile,
+                icon: IconlyLight.profile, 
                 onPressed: () async {
-                  await _showAddressDialog();
+                  await _showAddressDialog(); 
                 },
                 color: color,
               ),
+              
               _listTiles(
-                title: 'Orders',
-                icon: IconlyLight.bag,
+                title: 'Orders', 
+                icon: IconlyLight.bag, 
                 onPressed: () {
                   GlobalMethods.navigateTo(
                       ctx: context, routeName: OrdersScreen.routeName);
@@ -110,13 +111,13 @@ class _UserScreenState extends State<UserScreen> {
                 title: 'Viewed',
                 icon: IconlyLight.show, 
                 onPressed: () {
-                  GlobalMethods.navigateTo(
+                  GlobalMethods.navigateTo( 
                       ctx: context, routeName: ViewedRecentlyScreen.routeName);
                 },
                 color: color,
                 
               ),
-              _listTiles(
+              _listTiles( 
                 title: 'Forget password',
                 icon: IconlyLight.unlock,
                 onPressed: () {},
