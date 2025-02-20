@@ -27,10 +27,10 @@ class _OrdersScreenState extends State<OrdersScreen> {
       title: 'You did not place any order',
       subtitle: 'Order something and make me happy :)',
       buttontext: 'Shop now',
-      imagePath: 'assets/images/cart.png', 
+      imagePath: 'assets/images/cart.png',
     ) : Scaffold(
         appBar: AppBar(
-          leading: const BackWidget(), 
+          leading: const BackWidget(),
           elevation: 0,
           centerTitle: true,
           title: TextWidget(

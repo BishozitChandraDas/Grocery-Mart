@@ -28,9 +28,9 @@ class _OrderWidgetState extends State<OrderWidget> {
       leading: ClipRRect(
         // borderRadius: BorderRadius.circular(12),
         child: Image.asset(
-          'assets/images/apple_poster.png', 
+          'assets/images/apple_poster.png',
           width: size.width * 0.15,
-          height: size.height * 0.15, 
+          height: size.height * 0.15,
           fit: BoxFit.fill,
         ),
       ),
