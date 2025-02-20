@@ -37,7 +37,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
           itemBuilder: (BuildContext context, int index) {
             return Image.asset(
               Contss.authImagesPath[index],
-              fit: BoxFit.fill,
+              fit: BoxFit.fill, 
             );
           },
           autoplay: true,
@@ -54,14 +54,14 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: size.height * 0.1,
+                height: size.height * 0.1,  
               ),
               InkWell(
                 borderRadius: BorderRadius.circular(12),
                 onTap: () =>
                     Navigator.canPop(context) ? Navigator.pop(context) : null,
                 child: Icon(
-                  IconlyLight.arrowLeft2,
+                  IconlyLight.arrowLeft2, 
                   color: theme == true ? Colors.white : Colors.black,
                 ),
               ),
@@ -75,12 +75,12 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               ),
               const SizedBox(
                 height: 30, 
-              ), 
-              TextFormField(
+              ),  
+              TextFormField( 
                 controller: _emailTextController,
                 style: const TextStyle(color: Colors.white),
                 decoration: const InputDecoration( 
-                  hintText: 'Email address', 
+                  hintText: 'Email address',   
                   hintStyle: TextStyle(color: Colors.white),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.white),
@@ -103,12 +103,12 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                 buttonText: 'Reset now',
                 fct: () {
                   _forgetPasswordFCT();
-                },
+                }, 
               )
             ],
           ),
         )
       ]),
     );
-  }
+  }   
 }

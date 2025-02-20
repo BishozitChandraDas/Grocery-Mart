@@ -30,16 +30,16 @@ class _OrdersScreenState extends State<OrdersScreen> {
       imagePath: 'assets/images/cart.png',
     ) : Scaffold(
         appBar: AppBar(
-          leading: const BackWidget(), 
+          leading: const BackWidget(),
           elevation: 0,
-          centerTitle: true, 
+          centerTitle: true,
           title: TextWidget(
-            text: 'Your orders', 
+            text: 'Your orders',
             color: color,
-            textSize: 24.0, 
-            isTitle: true, 
+            textSize: 24.0,
+            isTitle: true,
           ),
-          backgroundColor: 
+          backgroundColor:
               Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
         ),
         body: ListView.separated(
@@ -50,13 +50,11 @@ class _OrdersScreenState extends State<OrdersScreen> {
               child: OrderWidget(),
             );
           },
-
           separatorBuilder: (BuildContext context, int index) {
             return Divider(
               color: color,thickness: 1,
             );
           },
-          
         ));
   }
 }

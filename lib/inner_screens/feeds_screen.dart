@@ -95,7 +95,6 @@ class _FeedsScreenState extends State<FeedsScreen> {
               children: List.generate(10, (index) {
                 return const FeedItemsWidget();
               }),
-              
             ),
           ],
         ),
