@@ -113,11 +113,11 @@ class _UserScreenState extends State<UserScreen> {
                   GlobalMethods.navigateTo(
                       ctx: context, routeName: ViewedRecentlyScreen.routeName);
                 },
-                color: color,
+                color: color, 
                 
               ),
-              _listTiles(
-                title: 'Forget password',
+              _listTiles( 
+                title: 'Forget password', 
                 icon: IconlyLight.unlock,
                 onPressed: () {},
                 color: color,
