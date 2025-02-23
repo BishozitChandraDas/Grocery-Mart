@@ -11,8 +11,8 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) { 
-    Size size = Utils(context).getScreenSize;
-    final Color color = Utils(context).color; 
+    Size size = Utils(context).getScreenSize; 
+    final Color color = Utils(context).color;  
     bool _isEmpty = true;
     return _isEmpty
         ? const EmptyScreen(

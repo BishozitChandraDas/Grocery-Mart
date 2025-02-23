@@ -18,9 +18,9 @@ class ViewedRecentlyScreen extends StatefulWidget {
 
 class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
   bool check = true;
-  @override
+  @override 
   Widget build(BuildContext context) {
-    Size size = Utils(context).getScreenSize;
+    Size size = Utils(context).getScreenSize; 
     Color color = Utils(context).color;
     bool _isEmpty = true;
 
