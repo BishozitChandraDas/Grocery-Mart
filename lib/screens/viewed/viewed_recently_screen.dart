@@ -29,8 +29,8 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
       return const EmptyScreen(
         title: 'Ypur history is empty',
         subtitle: 'No products has been viewed yet',
-        buttontext: 'Shop now',
-        imagePath: 'assets/images/history.png',
+        buttontext: 'Shop now', 
+        imagePath: 'assets/images/history.png', 
       );
     }
     else{

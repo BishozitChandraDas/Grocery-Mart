@@ -10,21 +10,21 @@ class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     Size size = Utils(context).getScreenSize;
-    final Color color = Utils(context).color;
+    final Color color = Utils(context).color; 
     bool _isEmpty = true;
     return _isEmpty
         ? const EmptyScreen(
           title: 'Your cart in empty',
           subtitle: 'Add something and make me happy :)',
           buttontext: 'Shop now',
-          imagePath: 'assets/images/cart.png',
+          imagePath: 'assets/images/cart.png', 
         )
         : Scaffold(
             appBar: AppBar(
               elevation: 0,
-              backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+              backgroundColor: Theme.of(context).scaffoldBackgroundColor, 
               title: TextWidget(
                 text: 'Cart',
                 color: color,

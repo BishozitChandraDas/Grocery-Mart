@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
     _passTextController.dispose(); 
     _passFocusNode.dispose(); 
     super.dispose();
-  }
+  } 
 
   void _submitFormOnLogin() {
     final isValid = _formKey.currentState!.validate();
@@ -76,17 +76,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(
                     height: 120,
                   ),
-                  const TextWidget(
+                  const TextWidget( 
                     text: 'Welcome Back',
                     color: Colors.white,
                     textSize: 30,
                     isTitle: true,
                   ),
-                  const SizedBox(
+                  const SizedBox( 
                     height: 8,
                   ),
                   const TextWidget(
-                    text: 'Sign in to continue',
+                    text: 'Sign in to continue', 
                     color: Colors.white,
                     textSize: 18,
                     isTitle: false,
