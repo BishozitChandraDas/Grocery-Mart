@@ -53,7 +53,7 @@ class OnSaleScreen extends StatelessWidget {
               ),
             )
           : GridView.count(
-              crossAxisCount: 2,
+              crossAxisCount: 2, 
               padding: EdgeInsets.zero,
               // crossAxisSpacing: 10,
               childAspectRatio: size.width / (size.height * 0.45),

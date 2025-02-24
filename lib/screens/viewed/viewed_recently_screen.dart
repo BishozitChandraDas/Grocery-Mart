@@ -25,7 +25,7 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
     bool _isEmpty = true;
 
 
-    if(_isEmpty == true){
+    if(_isEmpty == true){ 
       return const EmptyScreen(
         title: 'Ypur history is empty',
         subtitle: 'No products has been viewed yet',
