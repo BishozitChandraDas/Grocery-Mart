@@ -20,14 +20,14 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
   bool check = true;
   @override 
   Widget build(BuildContext context) {
-    Size size = Utils(context).getScreenSize; 
+    Size size = Utils(context).getScreenSize;
     Color color = Utils(context).color;
     bool _isEmpty = true;
 
 
     if(_isEmpty == true){ 
       return const EmptyScreen(
-        title: 'Ypur history is empty',
+        title: 'Your history is empty',
         subtitle: 'No products has been viewed yet',
         buttontext: 'Shop now', 
         imagePath: 'assets/images/history.png', 
