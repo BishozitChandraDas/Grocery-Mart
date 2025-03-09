@@ -20,8 +20,8 @@ class TextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector( 
-      onTap: onPressed, 
+    return GestureDetector(
+      onTap: onPressed,
       child: Text(
         text,
         maxLines: maxLines,

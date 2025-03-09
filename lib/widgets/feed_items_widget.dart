@@ -51,8 +51,8 @@ class _FeedItemsWidgetState extends State<FeedItemsWidget> {
                 child: Image.asset(
                   'assets/images/apple_poster.png',
                   width: size.width * 0.22, 
-                  height: size.width * 0.2,  
-                  fit: BoxFit.fill,  
+                  height: size.width * 0.2, 
+                  fit: BoxFit.fill, 
                 ),
               ),
               Padding(

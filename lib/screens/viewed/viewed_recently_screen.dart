@@ -45,7 +45,7 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
         title: TextWidget(
           text: 'History',
           color: color,
-          isTitle: true, 
+          isTitle: true,
           textSize: 22,
         ),
         actions: [
