@@ -13,10 +13,10 @@ class HeartBtn extends StatelessWidget {
       onTap: () {
         print('Print heart button is pressed');
       },
-      child: Icon(
+      child: Icon( 
         IconlyLight.heart, 
         size: 22,
-        color: color,
+        color: color, 
       ),
     );
   }

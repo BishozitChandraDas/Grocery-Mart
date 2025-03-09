@@ -32,11 +32,11 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
     return Scaffold(
       body: Stack(children: [
         Swiper(
-          duration: 800,
+          duration: 800, 
           autoplayDelay: 1000,
           itemBuilder: (BuildContext context, int index) {
             return Image.asset(
-              Contss.authImagesPath[index],
+              Contss.authImagesPath[index], 
               fit: BoxFit.fill, 
             );
           },

@@ -38,9 +38,9 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
       appBar: AppBar(
         centerTitle: true,
         leading: const BackWidget(),
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false, 
         elevation: 0,
-        backgroundColor:
+        backgroundColor: 
             Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
         title: TextWidget(
           text: 'History',

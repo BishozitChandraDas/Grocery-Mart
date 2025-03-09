@@ -9,10 +9,10 @@ class BackWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
     
-    return InkWell(
+    return InkWell( 
           borderRadius: BorderRadius.circular(12),
           onTap: () {
-            Navigator.pop(context);
+            Navigator.pop(context); 
           },
           child: Icon(
             IconlyLight.arrowLeft2,

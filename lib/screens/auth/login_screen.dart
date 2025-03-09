@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     text: 'Welcome Back',
                     color: Colors.white,
                     textSize: 30,
-                    isTitle: true,
+                    isTitle: true, 
                   ),
                   const SizedBox( 
                     height: 8,
@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     text: 'Sign in to continue', 
                     color: Colors.white,
                     textSize: 18,
-                    isTitle: false,
+                    isTitle: false, 
                   ),
                   const SizedBox(
                     height: 30,

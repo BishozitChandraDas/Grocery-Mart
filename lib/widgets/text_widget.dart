@@ -23,13 +23,13 @@ class TextWidget extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Text(
-        text,
-        maxLines: maxLines,
+        text, 
+        maxLines: maxLines, 
         overflow: TextOverflow.ellipsis,
         style: TextStyle(
           color: color, 
-          fontSize: textSize,
-          fontWeight: isTitle ? FontWeight.bold : FontWeight.normal,
+          fontSize: textSize, 
+          fontWeight: isTitle ? FontWeight.bold : FontWeight.normal, 
         ),
       ),
     );
