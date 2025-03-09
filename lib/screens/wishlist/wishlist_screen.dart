@@ -26,8 +26,8 @@ class WishlistScreen extends StatelessWidget {
             imagePath: 'assets/images/wishlist.png',
           )
         : Scaffold( 
-            appBar: AppBar(
-              centerTitle: true,
+            appBar: AppBar( 
+              centerTitle: true, 
               leading: const BackWidget(), 
               automaticallyImplyLeading: false,  
               elevation: 0,

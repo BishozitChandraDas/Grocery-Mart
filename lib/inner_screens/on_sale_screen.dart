@@ -15,8 +15,8 @@ class OnSaleScreen extends StatelessWidget {
     final Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
     return Scaffold(
-      appBar: AppBar(
-        leading: const BackWidget(),
+      appBar: AppBar( 
+        leading: const BackWidget(), 
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         centerTitle: true,
