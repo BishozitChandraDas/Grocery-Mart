@@ -30,13 +30,13 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
     final theme = Utils(context).getTheme;
     Size size = Utils(context).getScreenSize;
     return Scaffold(
-      body: Stack(children: [
+      body: Stack(children: [ 
         Swiper(
-          duration: 800, 
+          duration: 800,
           autoplayDelay: 1000,
           itemBuilder: (BuildContext context, int index) {
             return Image.asset(
-              Contss.authImagesPath[index], 
+              Contss.authImagesPath[index],
               fit: BoxFit.fill, 
             );
           },

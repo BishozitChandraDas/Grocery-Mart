@@ -19,7 +19,7 @@ class GoogleButton extends StatelessWidget {
               child: Image.asset(
                 'assets/images/google.png',
                 width: 40,
-              ),
+              ), 
             ),
             const SizedBox( 
               width: 8,
