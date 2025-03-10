@@ -80,7 +80,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                 controller: _emailTextController,
                 style: const TextStyle(color: Colors.white),
                 decoration: const InputDecoration( 
-                  hintText: 'Email address',   
+                  hintText: 'Email address',
                   hintStyle: TextStyle(color: Colors.white),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.white),
