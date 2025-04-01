@@ -10,7 +10,7 @@ Grocery Mart app is developed to provide a seamless shopping experience for user
  - Create the update address dialog
  - Implement the logout dialog
  - Implement the category design  
- - Finish building the category screen
+ - Finish building the category screen 
  - Implement the card swiper in the home screen
  - Implement the sale widget
  - Create the items on sale listview  
