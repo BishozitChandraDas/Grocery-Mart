@@ -1,7 +1,7 @@
 ## Grocery Mart
 Grocery Mart app is developed to provide a seamless shopping experience for users. This app incorporates features such as a dynamic home screen displaying product categories, a fully functional cart system, user authentication, and a user-friendly interface for browsing and purchasing products.  
  
-## Project Details:      
+## Project Details:       
  - Lock device orientation
  - Theme mode (Dark & Light)     
  - Implement the bottom bar
