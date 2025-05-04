@@ -15,7 +15,7 @@ Grocery Mart app is developed to provide a seamless shopping experience for user
  - Implement the sale widget  
  - Create the items on sale listview    
  - Impelment the rotated on sale text widget  
- - Fancy image implementation
+ - Fancy image implementation 
  - Implement the feeds widget and add it to the Home screen
  - Make the price widget dynamic
  - Implement the sale screen 
