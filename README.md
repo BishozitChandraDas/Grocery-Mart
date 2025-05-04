@@ -7,7 +7,7 @@ Grocery Mart app is developed to provide a seamless shopping experience for user
  - Implement the bottom bar   
  - Add different appbars for the different screen in the bottombar  
  - Implement the user screen  
- - Create the update address dialog 
+ - Create the update address dialog  
  - Implement the logout dialog 
  - Implement the category design    
  - Finish building the category screen  
